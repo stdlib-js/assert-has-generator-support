@@ -40,7 +40,7 @@ tape( 'feature detection result is a boolean', function test( t ) {
 
 tape( 'if `function*()` is supported, detection result is `true`', function test( t ) {
 	var detect = proxyquire( './../lib/main.js', {
-		'@stdlib/utils/eval': stub
+		'@stdlib/utils-eval': stub
 	});
 
 	t.ok( detect(), 'detection result is `true`' );
@@ -53,7 +53,7 @@ tape( 'if `function*()` is supported, detection result is `true`', function test
 
 tape( 'if `function*()` is not supported, detection result is `false`', function test( t ) {
 	var detect = proxyquire( './../lib/main.js', {
-		'@stdlib/utils/eval': stub
+		'@stdlib/utils-eval': stub
 	});
 
 	t.notOk( detect(), 'detection result is `false`' );
