@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import hasGeneratorSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-generator-support@deno/mod.js';
+import hasGeneratorSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-generator-support@v0.1.0-deno/mod.js';
 ```
 
 #### hasGeneratorSupport()
@@ -75,7 +75,7 @@ var bool = hasGeneratorSupport();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import hasGeneratorSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-generator-support@deno/mod.js';
+import hasGeneratorSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-generator-support@v0.1.0-deno/mod.js';
 
 var bool = hasGeneratorSupport();
 if ( bool ) {
