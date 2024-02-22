@@ -35,19 +35,84 @@ limitations under the License.
 
 > Detect native [`generator function`][generator-function] support.
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/assert-has-generator-support
+```
 
+Alternatively,
 
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
 
+</section>
 
+<section class="usage">
 
+## Usage
+
+```javascript
+var hasGeneratorSupport = require( '@stdlib/assert-has-generator-support' );
+```
+
+#### hasGeneratorSupport()
+
+Detects if a runtime environment supports ES2015 [`generator functions`][generator-function], i.e. `function*()`.
+
+```javascript
+var bool = hasGeneratorSupport();
+// returns <boolean>
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   The implementation uses code evaluation, which may be problematic in browser contexts enforcing a strict [content security policy][mdn-csp] (CSP).
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var hasGeneratorSupport = require( '@stdlib/assert-has-generator-support' );
+
+var bool = hasGeneratorSupport();
+if ( bool ) {
+    console.log( 'Environment has native generator function support.' );
+} else {
+    console.log( 'Environment lacks native generator function support.' );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -65,7 +130,7 @@ npm install -g @stdlib/assert-has-generator-support-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: has-generator-support [options]
@@ -82,7 +147,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ has-generator-support
@@ -101,11 +166,6 @@ $ has-generator-support
 
 <section class="related">
 
-## See Also
-
--   <span class="package-name">[`@stdlib/assert-has-generator-support`][@stdlib/assert-has-generator-support]</span><span class="delimiter">: </span><span class="description">detect native generator function support.</span>
-
-
 </section>
 
 <!-- /.related -->
@@ -123,7 +183,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -146,11 +206,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-has-generator-support-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/assert-has-generator-support-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-has-generator-support.svg
+[npm-url]: https://npmjs.org/package/@stdlib/assert-has-generator-support
 
-[test-image]: https://github.com/stdlib-js/assert-has-generator-support/actions/workflows/test.yml/badge.svg?branch=v0.2.0
-[test-url]: https://github.com/stdlib-js/assert-has-generator-support/actions/workflows/test.yml?query=branch:v0.2.0
+[test-image]: https://github.com/stdlib-js/assert-has-generator-support/actions/workflows/test.yml/badge.svg?branch=v0.2.1
+[test-url]: https://github.com/stdlib-js/assert-has-generator-support/actions/workflows/test.yml?query=branch:v0.2.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-has-generator-support/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-has-generator-support?branch=main
