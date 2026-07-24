@@ -1,5 +1,5 @@
-"use strict";var u=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var s=u(function(n,t){
-var i=require('@stdlib/utils-eval/dist');function a(){var r;try{i('"use strict"; (function* () {})'),r=!0}catch(e){r=!1}return r}t.exports=a
-});var o=s();module.exports=o;
+"use strict";var i=function(e,r){return function(){try{return r||e((r={exports:{}}).exports,r),r.exports}catch(u){throw (r=0, u)}};};var s=i(function(p,t){
+var a=require('@stdlib/utils-eval/dist');function o(){var e;try{a('"use strict"; (function* () {})'),e=!0}catch(r){e=!1}return e}t.exports=o
+});var c=s();module.exports=c;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
